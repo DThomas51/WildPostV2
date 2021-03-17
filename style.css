@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #EFEFEF;
+    font-family: Redressed;
+}
+
+.logoOne{
+    height: 10vh;
+    width: 5vw;
+    padding-left: 2rem;
+}
+
+.logoTwo{
+    height: 10vh;
+    width: 11vw;
+    padding-left: 2rem;
+}
+
+
+nav{display: flex;
+background-color: #2d5595 ;
+border-bottom: solid rgb(44, 44, 44);
+border-top: solid rgb(44, 44, 44);
+width: 100%;
+}
+
+
+ul{display: flex;
+ align-items: center;
+ padding-left: 30%;
+    
+}
+
+li{
+list-style: none;
+margin-right: 1em;
+}
+
+ul li a {
+    color: #000000;
+    text-decoration: none;   
+  }
+  
+ul li a:hover {
+    color: #9d9d9d; 
+}
+
+h1{
+    font-size: 30px;
+    border-style: inset;
+    width: 50vw;
+    padding-left: 1rem;
+    margin-left: 2rem;
+
+}
+#articleOne {display: grid;
+
+}
