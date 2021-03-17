@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
+/* Mobile */
+
 @media screen and (max-width: 768px) {
     body {
         background-color: #EFEFEF;
@@ -58,9 +60,10 @@
 
     h1{
         font-size: 25px;
-        border-style: inset;
+        border: solid rgb(44, 44, 44);
         padding-left: 1rem;
         text-align: center;
+        background-color:#2d5595 ;
     }
     #articleOne{display: grid;
     grid-template-columns: auto;
@@ -95,6 +98,8 @@
         margin-left: auto;
         margin-right: auto;
         border: solid #2d5595 ;
+        height: 100%;
+        width: 90%;
     }
 
     p {
@@ -122,7 +127,9 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/* Ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     body {
         background-color: #EFEFEF;
@@ -138,14 +145,14 @@
     }
 
     .logoOne{
-        height: 15%;
-        width: 15%;
+        height: 12%;
+        width: 12%;
         margin:0;  
     }
 
     .logoTwo{
-        height:35% ;
-        width:35% ;
+        height:25% ;
+        width:25% ;
         margin:0;
     }
 
@@ -167,7 +174,7 @@
     li{
     list-style: none;
     margin-right: 1em;
-    font-size: 14   px;
+    font-size: 25px;
     }
 
     ul li a {
@@ -180,10 +187,11 @@
     }
 
     h1{
-        font-size: 25px;
-        border-style: inset;
+        font-size: 40px;
+        border: solid rgb(44, 44, 44);
         padding-left: 1rem;
         text-align: center;
+        background-color:#2d5595 
     }
     #articleOne{display: grid;
     grid-template-columns: auto;
@@ -218,11 +226,13 @@
         margin-left: auto;
         margin-right: auto;
         border: solid #2d5595 ;
+        height: 100%;
+        width: 90%;
     }
 
     p {
         text-align: center;
-        font-size: 20px;
+        font-size: 29px;
     }
 
     .pub{
@@ -231,19 +241,158 @@
         padding-top: 10px;
     }
     footer {
-        margin-top: 15px;
-        padding-bottom: 20px;
+        margin-top: 5px;
+        padding-bottom: 5px;
         border-top: solid 0.5rem #2d5595;
         background-color: rgb(44, 44, 44);
         color: grey;
+        margin-bottom: 100px;
     }
 
     footer a {
         color:grey;
 
-
-
-
+    }
 
     
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+    
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #EFEFEF;
+        font-family: Redressed;
+        padding: 0;
+        margin:0 ;
+    }
+    .logo{
+        display:flex;
+        justify-content: flex-start;  
+    }
+
+    .logoOne{
+        height: 10%;
+        margin:0; 
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .logoTwo{
+        height:10% ;
+        margin:0;
+        position: absolute;
+        top: 0;
+        left: 150px;
+    }
+
+
+    nav{
+    background-color: #2d5595 ;
+    border-bottom: solid rgb(44, 44, 44);
+    border-top: solid rgb(44, 44, 44);
+    bottom: initial;
+    max-width: 100%;
+    padding-left: 45%;
+    min-height: 10vh;
+
+    }
+
+    ul{
+        display: flex;
+        padding-top: 1%;
+        
+    }
+
+    li{
+    list-style: none;
+    margin-right: 2em;
+    font-size: 21px;
+    }
+
+    ul li a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    ul li a:hover {
+        color: #9d9d9d; 
+    }
+
+    h1{
+        font-size: 25px;
+        border: solid rgb(44, 44, 44);
+        padding-left: 1rem;
+        max-width: 30vw;
+        background-color:#2d5595 
+    }
+    #articleOne{display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    }
+    #articleTwo {display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    #articleThree {display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    }
+    #articleFour {display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        border-top: solid 0.5rem #2d5595;
+        background-color: rgb(44, 44, 44);
+        color: grey;
+        order: 1;
+    }
+
+    body > .credits{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logoWild{
+        width: 15%;
+        height: 15%;
+    }
+
+    .img1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid #2d5595 ;
+        height: 90%;
+        width:60%;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .pub{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-height: 200px;
+        padding-top: 10px;
+    }
+
+    footer a {
+        color:grey;
+
+    }
 }
