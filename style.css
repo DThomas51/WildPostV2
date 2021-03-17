@@ -61,6 +61,7 @@
         border-style: inset;
         padding-left: 1rem;
         text-align: center;
+        background-color: #2d5595;
     }
     #articleOne{display: grid;
     grid-template-columns: auto;
