@@ -11,7 +11,7 @@ const presentation = [
   {
     name: "Thomas",
     picture: "./img/Thomas.jpg",
-    text : "La Wild c'est quoi pour moi?\nC'est avant tout une grand famille qui regroupe plusieurs écoles en Europe.\nLeurs Formations de developpeur sont les meilleures qu'on puisse trouver.\nOn est super bien suivis par les formateurs.\n'Fin bref c'est les meilleurs."
+    text : "La Wild c'est quoi pour moi?\nC'est avant tout une grand famille qui regroupe plusieurs écoles en Europe.\nLeurs Formations de developpeur sont les meilleures qu'on puisse trouver.\nOn est super bien suivis par les formateurs que ce soit au niveau des cours ,du point de vue professionel aprés formations.\n Les cours et les quêtes sont plus que passionnant .\n Fin bref c'est les meilleurs."
   },
 ]
 
