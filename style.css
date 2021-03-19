@@ -50,7 +50,7 @@
     }
 
     ul li a {
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
     }
 
@@ -65,6 +65,7 @@
         text-align: center;
         background-color:#2d5595 ;
         border-radius: 5px;
+        color: rgb(255, 255, 255);
     }
 
     #articleOne {
@@ -116,6 +117,7 @@
     p {
         text-align: center;
         font-size: 20px;
+        font-family: serif;
     }
 
     .pub1 {
@@ -246,7 +248,7 @@
     }
     
     ul li a {
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
     }
     
@@ -261,6 +263,7 @@
         text-align: center;
         background-color:#2d5595; 
         border-radius: 5px;
+        color: rgb(255, 255, 255);
     }
 
     #articleOne {
@@ -310,6 +313,7 @@
     p {
         text-align: center;
         font-size: 29px;
+        font-family: serif;
     }
 
     .pub1 {
@@ -455,7 +459,7 @@
     }
 
     ul li a {
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
     }
 
@@ -464,13 +468,14 @@
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 35px;
         border: solid rgb(44, 44, 44);
         padding-left: 1rem;
-        max-width: 30vw;
+        max-width: 45vw;
         background-color:#2d5595; 
         border-radius:5px ;
         margin: 0;
+        color: rgb(255, 255, 255);
     }
 
     #articleOne {
@@ -579,13 +584,12 @@
 
     p {
         text-align: center;
-        font-size: 20px;
-        max-height:400px ;
+        font-family: serif;
+        font-size: 18px;
         max-width:500px ;
         margin: auto; 
         margin-right: 1rem;
         margin-left: 1rem; 
-        overflow-y: auto;
     }
 
     .pub1 {
