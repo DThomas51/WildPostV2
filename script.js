@@ -44,7 +44,6 @@ function createCard(title, image, text) {
   cardText.innerHTML = `${text}`;
   cardBody.appendChild(cardText);
 
-
 }
 
 let i = 0;
