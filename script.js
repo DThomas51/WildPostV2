@@ -45,13 +45,13 @@ function createCard(title, image, text) {
 
   const cardSum = document.createElement("summary");
   cardSum.classList.add("card-modal");
-  cardBody.appendChild(cardSum);
+  cardDetails.appendChild(cardSum);
   
   
   const cardText = document.createElement("p");
   cardText.classList.add("card-text");
   cardText.innerHTML = `${text}`;
-  cardBody.appendChild(cardText);
+  cardDetails.appendChild(cardText);
 
 }
 
