@@ -35,10 +35,19 @@ function createCard(title, image, text) {
 
   const cardTitle = document.createElement("h2");
   cardTitle.classList.add("card-title");
-
   cardTitle.innerHTML = `${title}`;
   cardBody.appendChild(cardTitle);
 
+  const cardDetails = document.createElement("details");
+  cardDetails.classList.add("modal");
+  cardBody.appendChild(cardDetails);
+  
+
+  const cardSum = document.createElement("summary");
+  cardSum.classList.add("card-modal");
+  cardBody.appendChild(cardSum);
+  
+  
   const cardText = document.createElement("p");
   cardText.classList.add("card-text");
   cardText.innerHTML = `${text}`;
