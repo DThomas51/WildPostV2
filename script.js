@@ -38,6 +38,10 @@ function createCard(title, image, text) {
   cardTitle.innerHTML = `${title}`;
   cardBody.appendChild(cardTitle);
 
+  const cardButton = document.createElement("button");
+  cardButton.classList.add("card-button");
+  cardButton.innerHTML = "Détails";
+  cardBody.appendChild(cardButton);
 
 }
 
@@ -46,4 +50,10 @@ let i = 0;
 for (i in presentation) {
   createCard(presentation[i].name, presentation[i].picture, presentation[i].text);
 }
+
+const tabPub = [
+
+  btnFooter1 , btnFooter2
+]
+
 
