@@ -38,20 +38,6 @@ function createCard(title, image, text) {
   cardTitle.innerHTML = `${title}`;
   cardBody.appendChild(cardTitle);
 
-  const cardDetails = document.createElement("details");
-  cardDetails.classList.add("modal");
-  cardBody.appendChild(cardDetails);
-  
-
-  const cardSum = document.createElement("summary");
-  cardSum.classList.add("card-modal");
-  cardDetails.appendChild(cardSum);
-  
-  
-  const cardText = document.createElement("p");
-  cardText.classList.add("card-text");
-  cardText.innerHTML = `${text}`;
-  cardDetails.appendChild(cardText);
 
 }
 
