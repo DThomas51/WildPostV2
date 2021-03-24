@@ -92,16 +92,15 @@ const pubArray = [
   },
 ];
 
-let j = 0;
-const pub = document.getElementsByClassName("pub2")
-const pubSrc = document.getElementsByID("pubsrc")
 
-for(j = 0; j < pubArray.length; j++){
+const pub = document.querySelector(".pub2")
+const pubSrc = document.getElementById("pubsrc")
 
-  setTimeout(() => {
-    pub.src = `${pubArray[j].img}`;
-    pubSrc.href = `${pubArray[j].url}`;
-  }, 3000);
+setInterval(() => {
+  console.log(pub, pubSrc)
+  const index = Math.floor(Math.random() * (pubArray.length))
+  pub.src = `${pubArray[index].img}`;
+  pubSrc.href = `${pubArray[index].url}`;
+}, 3000);
 
-};
 
