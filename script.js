@@ -3,7 +3,7 @@ const cards = document.querySelector(".cards");
 const presentation = [
   {
     name: "Bastien",
-    picture: "./img/bastien.jpg",
+    picture: "./img/Bastien.jpg",
     text : "Ce que j’ai le plus aimé dès mon arrivée à l’école, c’est la diversité des profils et le cadre offert par la Wild Code School. Apprendre (à apprendre) dans cet environnement est vraiment super enrichissant!\n La cohésion entre tous les élèves est superbe, nous échangeons et nous nous aidons tous énormément ce qui permet d’avancer ensemble.\n Je sais que cette formation est un réel tremplin pour mon avenir professionnel et j’ai déjà hâte d’être en haut de la rampe pour prendre mon envol !" 
     
   },
