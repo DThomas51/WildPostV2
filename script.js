@@ -38,22 +38,70 @@ function createCard(title, image, text) {
   cardTitle.innerHTML = `${title}`;
   cardBody.appendChild(cardTitle);
 
-  const cardButton = document.createElement("button");
-  cardButton.classList.add("card-button");
-  cardButton.innerHTML = "Détails";
-  cardBody.appendChild(cardButton);
+  
+  const cardDetails = document.createElement("details");
+  cardDetails.classList.add("modal");
+  cardBody.appendChild(cardDetails);
+  
+  
+  const cardSum = document.createElement("summary");
+  cardSum.classList.add("modal-trigger");
+  cardSum.innerHTML = "Détails";
+  cardDetails.appendChild(cardSum);
+  
+  const cardText = document.createElement("p");
+  cardText.classList.add("modal-content");
+  cardText.innerHTML = `${text}`;
+  cardDetails.appendChild(cardText);
 
-}
+};
 
 let i = 0;
 
 for (i in presentation) {
   createCard(presentation[i].name, presentation[i].picture, presentation[i].text);
-}
+};
 
-const tabPub = [
+const pubArray = [
+  {
+    name: "Dev",
+    text : "Découvrez les communautés tech proches de chez vous, participez à des événements (mais portez un masque)",
+    url: "https://www.codeur.com/freelance/reims/developpeur-web-et-mobile-freelance",
+    img : "./img/pubDev.png"
+  },
 
-  btnFooter1 , btnFooter2
-]
+  {
+    name: "Sacrée Tech",
+    text : "Communauté Dev",
+    url: "https://www.meetup.com/fr-FR/SacreeTech/",
+    img : "./img/pub3.png"
+  },
 
+  {
+    name: "Resto du Coin",
+    text : "Les meilleurs resto de ta régions ",
+    url: "https://restoducoin.com/",
+    img : "./img/pub4.png"
+  },
+
+  {
+    name: "Champagne ar'Dev ",
+    text : "Communauté Champagne ar'Dev",
+    url: "https://discord.gg/mbft3qY4q9",
+    img : "./img/pub5.png"
+  },
+];
+
+let j = 0;
+const pub = document.getElementsByClassName("pub2")
+const pubSrc = document.getElementsByID("pubsrc")
+
+for(j = 0; j < pubArray.length; j++){
+
+  setTimeout(() => {
+    pub.src = `${pubArray[j].img}`;
+    pubSrc.href = `${pubArray[j].url}`;
+  }, 3000);
+
+};
 
