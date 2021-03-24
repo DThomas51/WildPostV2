@@ -344,7 +344,7 @@
     }
     
     h1 {
-        font-size: 35px;
+        font-size: 45px;
         border: solid rgb(44, 44, 44);
         padding-left: 1rem;
         text-align: center;
@@ -641,7 +641,7 @@
     }
    
     h1 {
-        font-size: 25px;
+        font-size: 35px;
         border: solid rgb(44, 44, 44);
         padding-left: 1rem;
         text-align: center;
@@ -650,6 +650,7 @@
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
+        border-radius: 3px;
     }
 
     .bigtitle {
