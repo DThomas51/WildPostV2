@@ -18,9 +18,9 @@
     }
     
     .logoOne {
-        height: 15%;
-        width: 15%;
-        margin:0;  
+        height: 50%;
+        width: 16%;
+       
         display:inline-flex;
         align-items: center;
         justify-content: center;
