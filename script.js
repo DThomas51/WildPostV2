@@ -46,7 +46,7 @@ function createCard(title, image, text) {
   
   const cardSum = document.createElement("summary");
   cardSum.classList.add("modal-trigger");
-  cardSum.innerHTML = "Détails";
+  cardSum.innerHTML = "En Savoir Plus";
   cardDetails.appendChild(cardSum);
   
   const cardText = document.createElement("p");

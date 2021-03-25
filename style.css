@@ -102,13 +102,6 @@
         justify-content: center;
     }
 
-    footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 20%;
-    }
-
     .logoWild {
         width: 15%;
         height: 15%;
@@ -163,11 +156,15 @@
     }
 
     footer {
-        margin-top: 15px;
-        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        padding-bottom: 15px;
         border-top: solid 0.5rem #c49401;
         background-color: #132e38;
         color: rgb(255, 255, 255);
+        margin-bottom: 15%;
     }
 
     footer a {
@@ -230,6 +227,7 @@
         margin-top: 16px;
         border-radius: 3px ;
         transition: .4s linear;
+        font-family: serif;
     }
     
     .modal-trigger::before{
@@ -386,13 +384,7 @@
        display: grid;
     }
 
-    footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 20%;
-    }
-    
+   
     .logoWild{
         width: 15%;
         height: 15%;
@@ -449,8 +441,11 @@
     }
 
     footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
         border-top: solid 0.5rem #c49401;
         background-color: #132e38;
         color: rgb(255, 255, 255);
@@ -517,6 +512,7 @@
         margin-top: 16px;
         border-radius: 3px ;
         transition: .4s linear;
+        font-family: serif;
       }
     
     .modal-trigger::before{
@@ -570,7 +566,7 @@
     }
 }
 
-/* Desktop */
+/* Desktop*/
 
 @media screen and (min-width: 1024px) {
     
@@ -664,29 +660,31 @@
 
     #articleOne {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         margin-top:2rem;
         margin-bottom: 2rem;
         gap: 1rem;
+       
     }
 
     #imgOne {
-        grid-column: 2;
-        grid-row: 2;
-        margin-right: 3rem;
-        margin-top: 3rem;
-        margin-left: 1rem;
+        grid-column: 4/6;
+        grid-row: 2; 
+
      }
 
     .text1 {
-        grid-column: 1;
-        grid-row: 2;
-        padding-left: 17%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding-left:3%;
+       
      }
 
     #articleTwo {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         margin-top:2rem;
         margin-bottom: 2rem;
         gap: 1rem;
@@ -694,21 +692,20 @@
     
     #imgTwo {
         grid-column: 1;
-        grid-row: 2;
-        margin-right: 1rem;
-        margin-top: 3rem;
-        margin-left: 12%;
+        grid-row: 2; 
+        margin-left: 2%;   
     }
 
     .text2 {
         grid-column: 2;
         grid-row: 2;
-        padding-right: 17%;
+        padding-right: 3%;
     }
 
     #articleThree {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         margin-top:2rem;
         margin-bottom: 2rem;
         gap: 1rem;
@@ -716,16 +713,13 @@
     
     #imgThree {
         grid-column: 2;
-        grid-row: 2;
-        margin-right: 3rem;
-        margin-top: 3rem;
-        margin-left: 1rem;
+        grid-row: 2;   
     }
 
     .text3 {
         grid-column: 1;
         grid-row: 2;
-        padding-left: 17%;
+        padding-left: 3%;
     }
 
     #articleFour {
@@ -761,16 +755,16 @@
     .img1 {
         display: block;
         border: solid #1b404e ;
-        height: 80%;
-        width:80%;
+        height: 40vh;
+        width: 47vw;
         border-radius: 5px;
     }
 
     p {
         text-align: center;
         font-family: serif;
-        font-size: 18px;
-        max-width:500px ;
+        font-size: 1.3vw;
+        max-width:45vw ;
         margin: auto; 
         margin-right: 1rem;
         margin-left: 1rem; 
@@ -880,11 +874,12 @@
     display: inline-block;
     border: 1px solid #c49401;
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-top: 16px;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 2px;
     border-radius: 3px ;
     transition: .4s linear;
-
+    font-family: serif;
   }
 
   .modal-trigger::before{
